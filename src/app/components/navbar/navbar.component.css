@@ -1,0 +1,68 @@
+.navbar {
+  background: rgba(6, 6, 6, 0.5);
+  height: 10vh;
+}
+.navbar-brand {
+  font-family: "goldman", cursive;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.ham-button {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background: var(--color-2);
+  padding: 5px;
+}
+.ham-button .line {
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--color-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 0;
+  transition: all 0.5s ease-in-out;
+}
+.ham-button .line1 {
+  width: 50%;
+  float: right;
+  transition: 0.5s ease-in-out;
+}
+.ham-check:checked + .line1 {
+  display: none;
+}
+.ham-check:checked ~ .line2 {
+  transform: rotate(45deg) translate(4px, 5px);
+}
+.ham-check:checked ~ .line3 {
+  transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.nav-menu {
+  width: 50%;
+  border-radius: 10px;
+  height: 45px;
+}
+.navbar-nav {
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+.nav-item a {
+  color: var(--color-1) !important;
+}
+.nav-item a:hover {
+  color: var(--color-5) !important;
+}
+.navbar-nav.nav-active {
+  transform: scale(1);
+}
+.nav-menu.nav-active {
+  background: var(--color-2);
+}
+.navbar-nav {
+  width: 75%;
+}

@@ -1,0 +1,29 @@
+<div
+  class="navbar d-flex justify-content-between fixed-top align-items-center px-5 navbar-expand-lg"
+>
+  <div class="navbar-brand text-light">AL TECHIE</div>
+  <div #navMenu class="d-flex align-items-center nav-menu">
+    <div class="w-100 d-flex nav-div align-items-center justify-content-center">
+      <ul
+        #navItems
+        class="navbar-nav d-flex justify-content-between align-items-center"
+      >
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <label class="btn ham-button my-auto" (click)="handleNavOpen()">
+      <input #navCheck class="ham-check" type="checkbox" hidden />
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </label>
+  </div>
+</div>

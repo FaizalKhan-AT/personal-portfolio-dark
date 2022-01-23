@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-1: #060606;
+  --color-2: #d2d2e2;
+  --color-3: #a6a7b3;
+  --color-4: #555557;
+  --color-5: #5d48ba;
+  --color-6: #8664e1;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--color-1) !important;
+}
+.code-brace,
+.braces {
+  color: var(--color-6);
+}
+::selection {
+  color: var(--color-4);
+}

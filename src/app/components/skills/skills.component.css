@@ -1,0 +1,35 @@
+.skills-title {
+  color: var(--color-3);
+  font-size: 2rem;
+}
+#skills {
+  width: 100%;
+  height: 100vh;
+  background: var(--color-1);
+}
+.skill-card {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  background: transparent;
+  color: var(--color-4);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.fab {
+  color: var(--color-4);
+  cursor: pointer;
+  font-size: 3rem;
+}
+.skill-card:hover .fab {
+  color: var(--color-5);
+}
+.skill-name {
+  color: var(--color-3);
+}
+.skill-card:hover .skill-name {
+  color: var(--color-2);
+}
+.skill-card:hover {
+  transform: translateY(-10px);
+}

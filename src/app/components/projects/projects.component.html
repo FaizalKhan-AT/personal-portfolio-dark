@@ -1,0 +1,67 @@
+<div class="my-3" id="projects">
+  <h3 class="text-center project-title mt-4">
+    <span class="code-brace">&#60; </span>Projects<span class="code-brace">
+      &#47;&#62;
+    </span>
+  </h3>
+  <div
+    class="container justify-content-center row w-100 mx-auto my-4 mt-5 gap-2"
+  >
+    <div
+      class="card my-2 {{ i % 2 === 0 ? 'me-3' : '' }} project-card col-5 px-0"
+      *ngFor="let item of projects; let i = index"
+    >
+      <img
+        class="card-img-top"
+        src="{{ item.img }}"
+        alt="{{ item.name }}"
+        srcset=""
+      />
+      <div class="card-body">
+        <span class="fs-4 fw-bold">
+          <span class="heading">projectDetails = </span>
+          <span class="braces">&lbrace;</span><br />
+          <span class="ps-3">
+            <span class="fs-5 fw-normal name"
+              >name<span class="braces"> : &OpenCurlyDoubleQuote;</span
+              >{{ item.name }}
+              <span class="braces">&CloseCurlyDoubleQuote; ,</span></span
+            >
+            <br />
+            <span class="fs-5 ps-3 fw-normal name"
+              >tech<span class="braces"> : &OpenCurlyDoubleQuote;</span
+              >{{ item.tech }}
+              <span class="braces">&CloseCurlyDoubleQuote; ,</span></span
+            >
+            <br />
+            <span class="fs-5 ps-3 fw-normal name"
+              >link<span class="braces"> : &OpenCurlyDoubleQuote;</span
+              ><a
+                class="link name"
+                href="{{ item.link }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View App {{ item.name }}</a
+              >
+              <span class="braces">&CloseCurlyDoubleQuote; ,</span></span
+            >
+            <br />
+            <span class="fs-5 ps-3 fw-normal name"
+              >gitRepo<span class="braces"> : &OpenCurlyDoubleQuote;</span
+              ><a
+                class="link name"
+                href="{{ item.gitRepo }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit git repository</a
+              >
+              <span class="braces">&CloseCurlyDoubleQuote; ,</span></span
+            >
+          </span>
+          <br />
+          <span class="braces">&rbrace;</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

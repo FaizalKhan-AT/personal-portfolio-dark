@@ -1,0 +1,45 @@
+<div id="about">
+  <h3 class="text-center about-title mt-4">
+    <span class="code-brace">&#60; </span>About<span class="code-brace">
+      &#47;&#62;
+    </span>
+  </h3>
+  <div class="about-content row w-100 my-4 mt-3">
+    <div class="col-5 mt-5 d-flex justify-content-center">
+      <span class="position-relative">
+        <div
+          class="position-absolute overlay end-0 start-0 top-0 bottom-0"
+        ></div>
+        <img
+          class="about-img"
+          width="300"
+          src="../../../assets/images/fknew.jpg"
+          alt="al muhammed faizal khan"
+        />
+      </span>
+    </div>
+    <div class="col-7 d-flex mt-5 px-2 flex-column">
+      <div class="name fs-3 my-2">A.L Muhammed Faizal Khan</div>
+      <p class="my-3 desc-about">
+        Hi, I am a student and a Web Developer, Currently Pursuing BCA. I am an
+        Aspiring Software Engineer .i am currently working as a web development
+        intern. Apart from programming i am also a content creator at youtube.
+      </p>
+      <div>
+        <h4 class="name">
+          otherDetails = <span class="braces">&lbrace;</span>
+        </h4>
+        <p class="desc-about ps-3">
+          <span *ngFor="let item of otherDetails">
+            <span>{{ item.key }} <span class="braces">: </span></span>
+            <span class="braces">&OpenCurlyDoubleQuote;</span>{{ item.value }}
+            <span class="braces">&CloseCurlyDoubleQuote;</span
+            ><span class="braces">, </span>
+            <br />
+          </span>
+        </p>
+        <h4 class="braces">&rbrace;</h4>
+      </div>
+    </div>
+  </div>
+</div>
