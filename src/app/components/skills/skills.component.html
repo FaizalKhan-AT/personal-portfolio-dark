@@ -4,8 +4,11 @@
       &#47;&#62;
     </span>
   </h3>
-  <div class="container my-4 justify-content-center mx-auto row w-100">
-    <div class="card my-2 col-4 p-2 skill-card" *ngFor="let item of mySkills">
+  <div class="my-4 justify-content-center mx-auto mt-5 row w-100 gap-4 mb-5">
+    <div
+      class="card my-2 col-3 p-2 skill-card py-3"
+      *ngFor="let item of mySkills"
+    >
       <i class="fab" [ngClass]="item.icon"></i><br />
       <span class="d-flex justify-content-start">
         <span class="skill-name fs-5"

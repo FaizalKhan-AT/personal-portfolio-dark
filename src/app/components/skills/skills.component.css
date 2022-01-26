@@ -4,7 +4,6 @@
 }
 #skills {
   width: 100%;
-  height: 100vh;
   background: var(--color-1);
 }
 .skill-card {
@@ -15,6 +14,7 @@
   color: var(--color-4);
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  border: 1px solid var(--color-5);
 }
 .fab {
   color: var(--color-4);
@@ -32,4 +32,6 @@
 }
 .skill-card:hover {
   transform: translateY(-10px);
+  /* box-shadow: 0 0 15px var(--color-5); */
+  box-shadow: inset 0 0 15px var(--color-5), 0 0 15px var(--color-5);
 }

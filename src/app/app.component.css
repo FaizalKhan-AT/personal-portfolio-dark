@@ -1,1 +1,9 @@
-
+.btn-backtop {
+  background: var(--color-5);
+  box-shadow: 0 0 10px var(--color-5);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.btn-backtop:hover {
+  transform: translateY(-10px);
+}

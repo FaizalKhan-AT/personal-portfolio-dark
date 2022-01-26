@@ -4,10 +4,12 @@
 }
 #projects {
   width: 100%;
-  height: 100vh;
 }
 .project-card {
   background: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid var(--color-5);
 }
 .heading {
   color: var(--color-2);
@@ -20,4 +22,11 @@
 }
 .link:hover {
   text-decoration: underline var(--color-5);
+}
+
+.project-card:hover {
+  /* box-shadow: 0 0 15px var(--color-5); */
+  box-shadow: inset 0 0 15px var(--color-5), 0 0 25px var(--color-5);
+
+  transform: translateY(-10px);
 }

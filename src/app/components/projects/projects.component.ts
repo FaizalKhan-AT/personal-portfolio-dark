@@ -24,7 +24,7 @@ export class ProjectsComponent implements OnInit {
       img: '../../../assets/images/netflix.png',
     },
     {
-      name: 'Photoshop Clone',
+      name: 'Simple Photo Editor',
       tech: 'Vanilla JavaScript, Html, Css',
       link: 'https://faizalkhan-at.github.io/Photoshop-Clone-for-YT/',
       gitRepo: 'https://github.com/FaizalKhan-AT/Photoshop-Clone-for-YT/',
