@@ -37,6 +37,21 @@ export class SkillsComponent implements OnInit {
       skill: 'Java',
       level: 'Beginner - Intermediate',
     },
+    {
+      icon: 'fas fa-project-diagram',
+      skill: 'DSA',
+      level: 'Beginner',
+    },
+    {
+      icon: 'fas fa-code',
+      skill: 'TypeScript',
+      level: 'Beginner',
+    },
+    {
+      icon: 'fab fa-node-js',
+      skill: 'Node Js',
+      level: 'Beginner',
+    },
   ];
   constructor() {}
 

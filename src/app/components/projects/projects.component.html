@@ -6,7 +6,9 @@
   </h3>
   <div class="justify-content-center row w-100 mx-auto my-4 my-5 gap-2">
     <div
-      class="card my-2 {{ i % 2 === 0 ? 'me-3' : '' }} project-card col-5 px-0"
+      class="card my-3 {{
+        i % 2 === 0 ? 'me-3' : ''
+      }} project-card col-lg-5 col-md-10 col-sm-10 px-0"
       *ngFor="let item of projects; let i = index"
     >
       <img

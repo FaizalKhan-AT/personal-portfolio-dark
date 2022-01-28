@@ -3,6 +3,7 @@
   box-shadow: 0 0 10px var(--color-5);
   transition: transform 0.3s ease-in-out;
   border-radius: 10px;
+  z-index: 15;
 }
 .btn-backtop:hover {
   transform: translateY(-10px);

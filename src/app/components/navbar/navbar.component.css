@@ -1,6 +1,10 @@
 .navbar {
-  background: rgba(6, 6, 6, 0.5);
   height: 10vh;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.navbar.active {
+  background: rgba(6, 6, 6, 0.5);
   backdrop-filter: blur(10px);
 }
 .navbar-brand {
@@ -49,7 +53,7 @@
 }
 .navbar-nav {
   transform: scale(0);
-  transform-origin: right;
+  transform-origin: top;
   transition: transform 0.3s ease-in-out;
 }
 .nav-item a {
@@ -68,8 +72,12 @@
   width: 75%;
 }
 @media screen and (max-width: 990px) {
-  .nav-menu.desktop {
-    display: none !important;
+  .nav-menu.nav-active {
+    background: transparent;
+  }
+  .nav-menu {
+    position: absolute;
+    right: 25px;
   }
   .navbar-nav {
     transform-origin: top;
@@ -80,11 +88,20 @@
     border-radius: 10px;
     width: 300px;
     height: 70vh;
-    padding: 20px 0;
+    padding: 30px 0;
     justify-content: center;
   }
   .nav-item {
     font-size: 1.3rem;
     font-weight: bold;
+  }
+}
+@media screen and (max-width: 380px) {
+  .navbar-nav {
+    right: 15px;
+  }
+  .navbar {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }

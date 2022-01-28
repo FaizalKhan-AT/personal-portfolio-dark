@@ -30,3 +30,18 @@
 
   transform: translateY(-10px);
 }
+@media screen and (max-width: 990px) {
+  .project-card {
+    margin-right: 0 !important;
+  }
+}
+@media screen and (max-width: 452px) {
+  .project-card .card-body span {
+    font-size: calc(0.95rem + 0.3vw) !important;
+  }
+}
+@media screen and (max-width: 330px) {
+  .project-card .card-body span {
+    font-size: calc(0.9rem + 0.3vw) !important;
+  }
+}

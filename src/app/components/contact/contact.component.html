@@ -5,14 +5,19 @@
     </span>
   </h3>
   <div class="justify-content-center row w-100 mx-auto my-5 gap-2">
-    <div class="col-2" *ngFor="let item of socialMedia">
+    <div
+      class="col-lg-2 col-md-3 col-sm-4 my-2"
+      *ngFor="let item of socialMedia"
+    >
       <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">
         <div
           class="card contact-card d-flex justify-content-center align-items-center"
         >
           <div class="card-body d-flex align-items-center gap-2 py-2">
             <p class="{{ item.icon }} mb-0 fs-3"></p>
-            <p class="mb-0">{{ item.name }}</p>
+            <span>
+              <p class="mb-0">{{ item.name }}</p>
+            </span>
           </div>
         </div>
       </a>
